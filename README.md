@@ -40,11 +40,17 @@ Unfortunately, we cannot reveal the decrypted wallet here, as it contains a flag
 🎯 Final Result – Unmasking the Attacker
 All clues led to one name: Ivan Kondratev. Based on our forensic trail, it’s clear that he and his team were behind the installation of the cryptominer on the server.
 ✅ What We Achieved
+
 ✅ Custom Python scan revealed three open ports
+
 ✅ Detected vulnerable WordPress version with RCE
+
 ✅ Exploited it with Metasploit for shell access
+
 ✅ Found the miner process and traced it to its directory
+
 ✅ Located encrypted wallet & decoded it using CyberChef
+
 ✅ Identified Ivan Kondratev as the attacker
 If you liked this write-up, check out my friend enkrat for more investigations and cyber adventures.
 
