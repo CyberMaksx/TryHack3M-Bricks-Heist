@@ -9,9 +9,10 @@ Port 443 (HTTPS)
 Port 3306 (MySQL)
 
 ![Initial Port Scan](scan1.jpg) 
-🧭 Step 2 – WordPress Discovery & Vulnerability Detection
-Digging into the website’s source code, we found something curious — a link to a hidden WordPress instance. Naturally, we ran wpscan, which revealed that the site was running WordPress version 1.9.5.
-This version is known to be vulnerable to CVE-2024-25600, a critical exploit allowing remote code execution (RCE).
+🧭 Step 2 – WordPress Plugin Discovery & Vulnerability Detection
+Digging into the website’s source code, we discovered a hidden WordPress instance. Running wpscan, we found that while the WordPress version itself wasn’t vulnerable, it was using an outdated plugin — specifically one affected by CVE-2024-25600, a critical vulnerability that allows remote code execution (RCE).
+
+![Vulnerability Discovery](vuln.jpg)
 
 ![Vulnerability Discovery](vuln3.jpg) 
 💥 Step 3 – Gaining RCE via Metasploit
