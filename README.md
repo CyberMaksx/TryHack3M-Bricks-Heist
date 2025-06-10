@@ -21,16 +21,22 @@ Digging into the website’s source code, we discovered a hidden WordPress insta
 ![Vulnerability Discovery](vuln.jpg)
 
 ![Vulnerability Discovery](vuln3.jpg) 
+
+
 💥 Step 3 – Gaining RCE via Metasploit
 We fired up msfconsole, found an appropriate exploit module for CVE-2024-25600, configured the necessary options, and launched the attack.
 
 ![Metasploit Configuration](msf4.jpg) ![Launching the Exploit](msf5.jpg) 
+
+
 Boom — we had remote shell access.
 🕵️ Step 4 – Suspicious Files and Flag Discovery
 Inside the compromised system, we found a file with a very interesting name — clearly the flag.
 We also ran ps aux to check for any strange processes, and lo and behold — we spotted something highly suspicious: a miner silently draining system resources.
 
 ![Process List - Miner Detected](ps.jpg) 
+
+
 🔎 Step 5 – Tracing the Miner
 We tracked the likely source of the miner and began our deep-dive analysis.
 
