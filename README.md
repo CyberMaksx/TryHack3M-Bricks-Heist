@@ -47,3 +47,5 @@ All clues led to one name: Ivan Kondratev. Based on our forensic trail, it’s c
 ✅ Located encrypted wallet & decoded it using CyberChef
 ✅ Identified Ivan Kondratev as the attacker
 If you liked this write-up, check out my friend enkrat for more investigations and cyber adventures.
+
+Room url : https://tryhackme.com/room/tryhack3mbricksheist
