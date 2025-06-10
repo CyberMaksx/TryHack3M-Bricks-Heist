@@ -2,6 +2,9 @@
 Bricks Heist on TryHackMe isn't just another room — it's a full-on cybercrime case. The mission? Investigate the compromise of Brick Press Media Co.’s infrastructure, uncover the attack vector, trace the malware, and ultimately identify the culprit behind the scenes. Let’s dive into this cyber whodunit.
 👥 Teamwork Makes the Dream Work
 This investigation was carried out by me and my friend enkrat — a fellow cyber security enthusiast  with sharp instincts and a passion for justice in the digital world.
+
+
+
 🔍 Step 1 – Port Scanning
 We kicked off our recon with a custom Python port scanner. It didn't take long to uncover that bricks.thm was exposing three open ports to the world:
 Port 22 (SSH)
@@ -9,6 +12,9 @@ Port 443 (HTTPS)
 Port 3306 (MySQL)
 
 ![Initial Port Scan](scan1.jpg) 
+
+
+
 🧭 Step 2 – WordPress Plugin Discovery & Vulnerability Detection
 Digging into the website’s source code, we discovered a hidden WordPress instance. Running wpscan, we found that while the WordPress version itself wasn’t vulnerable, it was using an outdated plugin — specifically one affected by CVE-2024-25600, a critical vulnerability that allows remote code execution (RCE).
 
